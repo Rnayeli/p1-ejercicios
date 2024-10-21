@@ -26,9 +26,6 @@ else {
     //Es par por que el resto fue 0
     alert ("El numero es par")
 }
-<<<<<<< HEAD
-
-
 
 //otra forma de resolverlo
 
@@ -46,5 +43,3 @@ if(num >= min) {
 else {
     //No esta en rango
 }
-=======
->>>>>>> 2f47faf6a741747e910a561eef57448bfe9ba100
