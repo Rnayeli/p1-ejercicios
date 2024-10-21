@@ -14,4 +14,32 @@ else {
     sueldo = 2000;
 }
 
-alert(`El sueldo es de ${sueldo}`);
+//Multiplicador de acuerdo a la subcategoria, el switch es para cuando tengo multiples opciones
+switch(subcategoria) {
+    case "A":
+    sueldo = sueldo * 1.5;
+    break;
+
+    case "B":
+    sueldo = sueldo * 2;
+    break;
+
+    case"C":
+    sueldo *= 2.5;
+    //es lo mismo que sueldo =  sueldo * 2.5;
+    break;
+
+    default:
+    sueldo = 0;
+    break;
+}
+
+if (sueldo >= 1500 && sueldo <= 3000){
+    alert(`El sueldo es de ${sueldo} es de rango incial`);
+}
+else if (sueldo > 3000 && sueldo <= 4000) {
+    alert(`El sueldo es de ${sueldo} es de rango intermedio`);
+}
+else if (suedlo > 4000){
+    alert(`El sueldo es de ${sueldo} es de rango avanzado`);
+}
