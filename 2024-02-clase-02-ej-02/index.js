@@ -6,7 +6,7 @@ let datoValido = true;
 //Validacion de ciudad
 do{
     ciudad = prompt("Ingrese la ciudad");
-    if(isNaN(ciudad)) {
+    if(!isNaN(ciudad)) {
         alert("Ingrese texto, no numeros");
         datoValido = false;
     }
@@ -28,7 +28,7 @@ do{
 
 do{
     sexo = prompt("Ingrese el sexo (H, M, X)").toLowerCase();
-    if(isNaN(sexo)) {
+    if(!isNaN(sexo)) {
         alert("Ingrese texto, no numeros");
         datoValido = false;
     }
