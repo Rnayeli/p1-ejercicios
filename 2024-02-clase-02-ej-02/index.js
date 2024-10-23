@@ -40,7 +40,7 @@ do{
         alert("No dejar el prompt vacio");
         datoValido = false;
     }
-    else if(sexo.toLowerCase() != "h" && sexo.toLowerCase() != "m" && sexo.toLowerCase() != "x") {
+    else if(sexo.toLowerCase() !== "h" && sexo.toLowerCase() !== "m" && sexo.toLowerCase() !== "x") {
         alert("Complete con una opcion valida (H, M, X)");
         datoValido = false;
     }
