@@ -27,7 +27,7 @@ do{
 //validamos sexo
 
 do{
-    sexo = prompt("Ingrese el sexo (H, M, X)").toLowerCase();
+    sexo = prompt("Ingrese el sexo (H, M, X)");
     if(!isNaN(sexo)) {
         alert("Ingrese texto, no numeros");
         datoValido = false;
@@ -47,4 +47,23 @@ do{
     else{
         datoValido = true;
     }
-} while(datoValido);
+} while(!datoValido);
+
+//validamos edad
+
+do{
+    edad = parseInt(prompt("Ingrese una edad entre 0 y 110"));
+
+    if(isNaN(edad)) {
+        alert("Ingrese numeros");
+        datoValido = false;
+    }
+
+    else if(edad < 0 || edad > 110) {
+        alert("Edad fuera de rango. Ingrese entre 0 y 110");
+        datoValido = false;
+    }
+    else{
+        datoValido = true;
+    }
+} while(!datoValido);
