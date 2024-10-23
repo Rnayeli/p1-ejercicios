@@ -94,18 +94,7 @@ do{
             contadorHombresMayores21++;
         }
     }
-    else if (sexo.toLowerCase() === "m") {
-        //Es mujer
-        contadorMujeres++;
-        acumuladorEdadMujeres += edad;
-        //veo si cumple con el requisito de edad
-        if(edad < 21){
-            contadorMujeresMenores21++;
-        }
-
-        //Veo si es la mujer de mas edad
-        if(edad > edadMujerMin)
-    }
+   
     else {
         //Es no binario
         contadorNoBinario++;
