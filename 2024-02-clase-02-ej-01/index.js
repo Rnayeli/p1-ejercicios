@@ -20,8 +20,36 @@ let = acumuladorDesaprobado = 0, acumuladorAprobados = 0, acumuladorPromocionado
 let = maxNota = 1, minNota = 10;
 
 do{
-    //lo que se repite
-    let nota = parseInt(prompt("Ingrese una nota (1 al 10)"));
+    let nota;
+    let notaValida = true;
+    
+    do{
+        //lo que se repite
+        nota = parseInt(prompt("Ingrese una nota (1 al 10)"));
+        //Esto va a devolver;
+        // - Numero entre 1 y 10
+        // - Numero menor a 1
+        // - Numero mayor a 10
+        // - NaN
+
+        if(isNaN(nota)) {
+            alert("Ingrese una nota numerica");
+            notaValida = false;
+        }
+        else if(nota < 1) {
+            alert("La nota debe ser 1 o más");
+            notaValida = false;
+        }
+        else if(nota > 10) {
+            alert("La nota no puede ser mayor a 10");
+            notaValida = false;
+        }
+        else {
+            notaValida = true;
+        }
+
+    } while(!notaValida); //notaValida != true
+    //while((nota < 1) || (nota > 10) || isNaN(nota)); reemplazmos esta linea por la de arriba
 
     //Empiezo a preguntar
     if (nota < 4){
